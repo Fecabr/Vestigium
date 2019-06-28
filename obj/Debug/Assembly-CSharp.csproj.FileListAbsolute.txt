@@ -338,3 +338,10 @@ C:\Users\Fernan\Desktop\Vestigium-39dc4779446d26e8ffc1d15782873b53fd1f3d57\obj\D
 C:\Users\Fernan\Desktop\Vestigium-39dc4779446d26e8ffc1d15782873b53fd1f3d57\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\Fernan\Desktop\Vestigium-39dc4779446d26e8ffc1d15782873b53fd1f3d57\obj\Debug\Assembly-CSharp.dll
 C:\Users\Fernan\Desktop\Vestigium-39dc4779446d26e8ffc1d15782873b53fd1f3d57\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\KdTreeLib.dll
+C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\pb_Stl.dll
+C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\Poly2Tri.dll
+C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\ProBuilderCore-Unity5.dll
+C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\ProBuilderMeshOps-Unity5.dll
+C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\UnityEditor.UI.dll
+C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\UnityEditor.UI.xml
