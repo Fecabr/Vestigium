@@ -343,5 +343,4 @@ C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\pb_Stl.dll
 C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\Poly2Tri.dll
 C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\ProBuilderCore-Unity5.dll
 C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\ProBuilderMeshOps-Unity5.dll
-C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\UnityEditor.UI.dll
-C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\UnityEditor.UI.xml
+C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb

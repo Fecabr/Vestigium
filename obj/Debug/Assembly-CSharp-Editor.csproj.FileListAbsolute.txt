@@ -123,7 +123,6 @@ C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\SyntaxTree.VisualStudio.Unity
 C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\Boo.Lang.PatternMatching.dll
 C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\Boo.Lang.Useful.dll
 C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\Unity.CecilTools.dll
-C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\Assembly-CSharp.pdb
 C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\UnityEngine.xml
 C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\UnityEditor.xml
 C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\UnityEngine.AIModule.xml
@@ -211,3 +210,6 @@ C:\Users\Fernan\Documents\Vestigium\obj\Debug\Assembly-CSharp-Editor.csproj.Core
 C:\Users\Fernan\Documents\Vestigium\obj\Debug\Assembly-CSharp-Editor.csproj.CopyComplete
 C:\Users\Fernan\Documents\Vestigium\obj\Debug\Assembly-CSharp-Editor.dll
 C:\Users\Fernan\Documents\Vestigium\obj\Debug\Assembly-CSharp-Editor.pdb
+C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\Assembly-CSharp-Editor-firstpass.pdb

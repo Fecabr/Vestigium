@@ -10,9 +10,11 @@ public class Kill : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
+          
             other.transform.position = portal.transform.position;
             other.transform.rotation = portal.transform.rotation;
-            Debug.Log("Perdiste....... ;(");
+            GameManager.instance.LoseLife();
+            
         }
     }
 }

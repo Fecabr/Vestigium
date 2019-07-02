@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour {
 
     private int points =0;
     private int itemAmnt = 0;
-    private int PlayerLifes;
+    private int PlayerLifes = 3;
 
     private void Awake()
     {
@@ -22,11 +22,23 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    public void PickItem()
+    public void PickItems()
     {
         points += 10;
         itemAmnt++;
-        Debug.Log("La puntación actual es " + points);
+        // GUI.Label(new Rect(Screen.width / 2, 10, 100, 100), "Puntación"+points);
+        //Debug.Log("La puntación actual es " + points);
+       // OnGUI();
+        if (points == 50)
+        {
+            Debug.Log("Ganaste el juego");
+        }
+       
+    }
+
+    public void OnGUI()
+    {
+        GUI.Label(new Rect(Screen.width / 2, 10, 100, 100), "La puntación es " + points);
     }
 
     public void LoseLife()
@@ -40,6 +52,7 @@ public class GameManager : MonoBehaviour {
             PlayerLifes = 0;
             //Mostrar Pantalle de Gameover
             Debug.Log("Moriste");
+            Destroy(gameObject);
       
         }
     }

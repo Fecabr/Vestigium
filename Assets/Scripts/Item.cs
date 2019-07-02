@@ -9,13 +9,15 @@ public class Item : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            
+            GameManager.instance.PickItems();
             Destroy(gameObject); 
         }
     }
 
-    void OnGUI()
-    {
-        // GUI.Label(new Rect(Screen.width/2,10,100,100),"Botonn");
-        GUI.Label(new Rect(Screen.width / 2, 10, 100, 100), "Nota :El titulo de la portada va en formato Times New Roman tamaño 12");
-    }
+    //void OnGUI()
+    //{
+    //    GUI.Label(new Rect(Screen.width / 2, 10, 100, 100), "Botonn");
+    //    GUI.Label(new Rect(Screen.width / 2, 10, 100, 100), "La puntación es " + GameManager.instance.points);
+    //}
 }
