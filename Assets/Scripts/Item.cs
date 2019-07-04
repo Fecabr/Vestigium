@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Item : MonoBehaviour
 {
+
+    public Text scorePlayer;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -11,8 +15,13 @@ public class Item : MonoBehaviour
         {
             
             GameManager.instance.PickItems();
-            Destroy(gameObject); 
+            Destroy(gameObject);
+            UpdateScoreLable(scorePlayer,GameManager.instance.points);
         }
+    }
+    void UpdateScoreLable(Text label,int score)
+    {
+        label.text = score.ToString();
     }
 
     //void OnGUI()

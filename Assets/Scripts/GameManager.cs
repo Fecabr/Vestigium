@@ -1,14 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
     public static GameManager instance = null;
 
-    private int points =0;
+    public int points =0;
     private int itemAmnt = 0;
     private int PlayerLifes = 3;
+  
 
     private void Awake()
     {
@@ -28,7 +30,8 @@ public class GameManager : MonoBehaviour {
         itemAmnt++;
         // GUI.Label(new Rect(Screen.width / 2, 10, 100, 100), "Puntación"+points);
         //Debug.Log("La puntación actual es " + points);
-       // OnGUI();
+        // OnGUI();
+       
         if (points == 50)
         {
             Debug.Log("Ganaste el juego");
@@ -36,10 +39,11 @@ public class GameManager : MonoBehaviour {
        
     }
 
-    public void OnGUI()
-    {
-        GUI.Label(new Rect(Screen.width / 2, 10, 100, 100), "La puntación es " + points);
-    }
+ 
+    //public void OnGUI()
+    //{
+    //    GUI.Label(new Rect(Screen.width / 2, 10, 100, 100), "La puntación es " + points);
+    //}
 
     public void LoseLife()
     {
