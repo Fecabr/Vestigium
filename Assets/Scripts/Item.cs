@@ -6,23 +6,48 @@ using UnityEngine.SceneManagement;
 
 public class Item : MonoBehaviour
 {
+    //Esta variable llevara el conteo de nuestros puntos de los collectables que recolectemos
+    public static int CollectableQuantity = 0;
+    public Text CollectableTex;
+    AudioSource audioPickUp;
 
-    public Text scorePlayer;
+    //
+    ParticleSystem collectablePart;
 
-    public void OnTriggerEnter(Collider other)
+     void Start()
     {
+        collectablePart = GameObject.Find("CollectableParticles").GetComponent<ParticleSystem>();
+        audioPickUp = GetComponentInParent<AudioSource>();  
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+       
         if (other.CompareTag("Player"))
         {
-            
-            GameManager.instance.PickItems();
+            audioPickUp.Play();
+            //Cambiar cada exploción de cada particula
+            collectablePart.transform.position = transform.position;
+            collectablePart.Play();
             Destroy(gameObject);
-            UpdateScoreLable(scorePlayer,GameManager.instance.points);
+            CollectableQuantity += 10;
+            CollectableTex.text = CollectableQuantity.ToString();
+            //UpdateScoreLable(scorePlayer, CollectableQuantity);
+            
         }
+        
     }
-    void UpdateScoreLable(Text label,int score)
-    {
-        label.text = score.ToString();
-    }
+    //void UpdateScoreLable(Text label,int score)
+    //{
+    //    label.text = score.ToString();
+    //}
+
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    audioPickUp.Play();
+    //}
+
+
 
     //void OnGUI()
     //{

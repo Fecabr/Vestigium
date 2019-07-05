@@ -173,5 +173,3 @@ C:\Users\Fernan\Documents\Vestigium\obj\Debug\Assembly-CSharp-firstpass.csproj.C
 C:\Users\Fernan\Documents\Vestigium\obj\Debug\Assembly-CSharp-firstpass.csproj.CopyComplete
 C:\Users\Fernan\Documents\Vestigium\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\Fernan\Documents\Vestigium\obj\Debug\Assembly-CSharp-firstpass.pdb
-C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\UnityEditor.UI.dll
-C:\Users\Fernan\Documents\Vestigium\Temp\bin\Debug\UnityEditor.UI.xml
