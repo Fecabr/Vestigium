@@ -8,12 +8,13 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Default_Prototype
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION
+  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -83,17 +84,18 @@ Material:
     - _Amplitude: 0.33928573
     - _Angle: 0.46428573
     - _BumpScale: 1
+    - _ColorMask: 15
     - _Cutoff: 0.27
     - _DetailNormalMapScale: 1
-    - _DstBlend: 0
+    - _DstBlend: 10
     - _EmissionScaleUI: 0
     - _Gloss: 0.5
     - _GlossMapScale: 1
-    - _Glossiness: 0.48
+    - _Glossiness: 1
     - _GlossyReflections: 1
     - _Lightmapping: 1
     - _Metallic: 0
-    - _Mode: 0
+    - _Mode: 3
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Phase: 1
@@ -101,9 +103,15 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
     - _UVSec: 1
+    - _UseUIAlphaClip: 0
     - _Wavelength: 0.17857142
-    - _ZWrite: 1
+    - _ZWrite: 0
     m_Colors:
     - _Color: {r: 0.735849, g: 0.15619439, b: 0.15619439, a: 1}
     - _Color1: {r: 0.67910445, g: 0.67910445, b: 0.67910445, a: 1}

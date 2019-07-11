@@ -45,19 +45,5 @@ public class GameManager : MonoBehaviour {
     //    GUI.Label(new Rect(Screen.width / 2, 10, 100, 100), "La puntación es " + points);
     //}
 
-    public void LoseLife()
-    {
-        if (PlayerLifes > 1)
-        {
-            PlayerLifes--;
-        }
-        else
-        {
-            PlayerLifes = 0;
-            //Mostrar Pantalle de Gameover
-            Debug.Log("Moriste");
-            Destroy(gameObject);
-      
-        }
-    }
+
 }

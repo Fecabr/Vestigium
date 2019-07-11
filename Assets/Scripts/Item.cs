@@ -17,7 +17,7 @@ public class Item : MonoBehaviour
      void Start()
     {
         collectablePart = GameObject.Find("CollectableParticles").GetComponent<ParticleSystem>();
-        audioPickUp = GetComponentInParent<AudioSource>();  
+        audioPickUp = GetComponentInParent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -25,6 +25,8 @@ public class Item : MonoBehaviour
        
         if (other.CompareTag("Player"))
         {
+        
+
             audioPickUp.Play();
             //Cambiar cada exploción de cada particula
             collectablePart.transform.position = transform.position;
@@ -33,7 +35,11 @@ public class Item : MonoBehaviour
             CollectableQuantity += 10;
             CollectableTex.text = CollectableQuantity.ToString();
             //UpdateScoreLable(scorePlayer, CollectableQuantity);
-            
+
+            if (CollectableQuantity == 50)
+            {
+                SceneManager.LoadScene("WinScene");
+            }
         }
         
     }

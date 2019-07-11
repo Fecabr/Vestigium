@@ -14,11 +14,13 @@ public class Obstacle : MonoBehaviour {
 		
 	}
 
-    public void OnTriggerEnter(Collider other)
+
+    
+    void OnCollisionEnter(Collision other)
     {
-        if (other.CompareTag("Player"))
+        if (tag =="Player")
         {
-            GameManager.instance.LoseLife();
+            Destroy(gameObject);
         }
     }
 }
