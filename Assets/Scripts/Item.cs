@@ -36,7 +36,7 @@ public class Item : MonoBehaviour
             CollectableTex.text = CollectableQuantity.ToString();
             //UpdateScoreLable(scorePlayer, CollectableQuantity);
 
-            if (CollectableQuantity == 50)
+            if (CollectableQuantity == 10)
             {
                 SceneManager.LoadScene("WinScene");
             }
