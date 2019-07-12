@@ -114,7 +114,7 @@ public class InitCtrl : MonoBehaviour {
         {
             case 0:
                 PlayerPrefs.SetInt("module1", 0);
-                SceneManager.LoadScene("Menu");
+                SceneManager.LoadScene("MainScene");
                 break;
             case 1:
                 //aqui se pone la scene del modulo 2

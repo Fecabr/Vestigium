@@ -61,7 +61,7 @@ public class InitCtrl : MonoBehaviour {
         switch (index)
         {
             case 0:
-                moduleactive = PlayerPrefs.GetInt("module1");
+                moduleactive = PlayerPrefs.GetInt("MainScene");
                 break;
             case 1:
                 moduleactive = PlayerPrefs.GetInt("module2");
@@ -84,7 +84,7 @@ public class InitCtrl : MonoBehaviour {
         switch (module)
         {
             case 0:
-                SceneManager.LoadScene("Menu");
+                SceneManager.LoadScene("MainScene");
                 break;
             case 1:
                 //aqui se pone la scene del modulo 2
