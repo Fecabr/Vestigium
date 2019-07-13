@@ -28,9 +28,12 @@ public class Kill : MonoBehaviour {
 
             if (PlayerLifes == 0)
             {
-                playerGameOver.text = "Game Over";
+                //playerGameOver.text = "Game Over";
                 //Application.LoadLevel(Application.loadedLevel);
+                PlayerLifes = 3;
+                Item.CollectableQuantity = 0;
                 SceneManager.LoadScene("DeadScene");
+                
             }
             
             

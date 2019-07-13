@@ -3,47 +3,79 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum GameState{
+    menu,
+    inGame,
+    gameOver
+ }
 public class GameManager : MonoBehaviour {
 
     public static GameManager instance = null;
-
-    public int points =0;
+    //Inicializamos en muenu
+    public GameState currentGameState = GameState.menu;
+    
+    public int points = 0;
     private int itemAmnt = 0;
     private int PlayerLifes = 3;
-  
 
-    private void Awake()
+ 
+    //private void Awake()
+    //{
+    //    if (instance == null)
+    //    {
+    //        instance = this;
+    //    }
+    //    else if (instance != this)
+    //    {
+    //        Destroy(gameObject);
+    //    }
+    //}
+
+    //Necesario para saber en que esta el juego, vamos a guardar el estado.
+    public void StartGame()
     {
-        if (instance == null)
+
+    }
+
+    public void GameOver()
+    {
+
+    }
+
+    public void BackToMenue()
+    {
+
+    }
+
+    //Modificar el estado del juego entre estados, 
+    private void setGameState(GameState newGameState)
+    {
+        if (newGameState == GameState.menu)
         {
-            instance = this;
+            //TODO: Colocar la logica del menu
         }
-        else if (instance != this)
+        else if(newGameState==GameState.inGame)
         {
-            Destroy(gameObject);
+            //TODO: hay que preparar la esecena para jugar
         }
+        else if (newGameState == GameState.gameOver)
+        {
+            //TODO: Prepar el juego para el gameOver
+        }
+        //Utulizamos este metodo como un semaforo.
+        this.currentGameState = newGameState;
     }
 
     public void PickItems()
     {
         points += 10;
-        itemAmnt++;
-        // GUI.Label(new Rect(Screen.width / 2, 10, 100, 100), "Puntación"+points);
-        //Debug.Log("La puntación actual es " + points);
-        // OnGUI();
-       
+        itemAmnt++;       
         if (points == 50)
         {
             Debug.Log("Ganaste el juego");
         }
        
     }
-
- 
-    //public void OnGUI()
-    //{
-    //    GUI.Label(new Rect(Screen.width / 2, 10, 100, 100), "La puntación es " + points);
-    //}
 
 
 }

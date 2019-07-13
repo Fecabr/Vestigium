@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\Gyro.cs" />
     <Compile Include="Assets\Scripts\InitCtrl.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\ItemLevel2.cs" />
     <Compile Include="Assets\Scripts\Kill.cs" />
     <Compile Include="Assets\Scripts\LoadingController.cs" />
     <Compile Include="Assets\Scripts\MenuCtrl.cs" />
