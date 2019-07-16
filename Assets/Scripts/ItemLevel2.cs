@@ -13,6 +13,11 @@ public class ItemLevel2 : MonoBehaviour {
 
     //
     ParticleSystem collectablePart;
+    public float velocity;
+    public void Update()
+    {
+        transform.Rotate(Vector3.up,Time.deltaTime * velocity,Space.World);
+    }
 
     void Start()
     {
