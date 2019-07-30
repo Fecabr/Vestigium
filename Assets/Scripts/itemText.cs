@@ -19,7 +19,7 @@ public class itemText : MonoBehaviour {
         if (other.CompareTag("Player"))
         {
             gameObject.SetActive(false);
-            Debug.Log("Destruir");
+            //Debug.Log("Destruir");
         }
     }
 }

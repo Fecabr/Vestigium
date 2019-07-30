@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Kill : MonoBehaviour {
 
     public Text playerLiferText;
-    public Text playerGameOver;
+    //public Text playerGameOver;
     public static int PlayerLifes = 3;
     public Transform portal;
 
@@ -21,17 +21,18 @@ public class Kill : MonoBehaviour {
             other.transform.position = portal.transform.position;
             other.transform.rotation = portal.transform.rotation;
             //LoseLife();
-            Debug.Log("Tiene de vida " + PlayerLifes.ToString());
+            //Debug.Log("Tiene de vida " + PlayerLifes.ToString());
             PlayerLifes = PlayerLifes - 1;
 
             playerLiferText.text = PlayerLifes.ToString();
-
+            //Debug.Log("Chocaste");
             if (PlayerLifes == 0)
             {
                 //playerGameOver.text = "Game Over";
                 //Application.LoadLevel(Application.loadedLevel);
                 PlayerLifes = 3;
                 Item.CollectableQuantity = 0;
+                //SceneManager.UnloadSceneAsync("MainScene");
                 SceneManager.LoadScene("DeadScene");
                 
             }
