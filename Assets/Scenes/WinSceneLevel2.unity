@@ -1678,9 +1678,9 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u2981\t\xCDndice. Se muestra como un listado de todos los t\xEDtulos y
-    los subt\xEDtulos de un documento, el cual parte de la portada. Los n\xFAmeros
-    de p\xE1gina se separan de cada uno de los t\xEDtulos mediante\r\n tabulaci\xF3n
-    y espacios vac\xEDos. No se usan l\xEDneas, ni guiones ni puntos que unan cada
+    los subt\xEDtulos de un documento, el cual parte de la portada. \nLos n\xFAmeros
+    de p\xE1gina se separan de cada uno de los t\xEDtulos mediante\r tabulaci\xF3n
+    y espacios vac\xEDos. \nNo se usan l\xEDneas, ni guiones ni puntos que unan cada
     t\xEDtulo con su n\xFAmero de p\xE1gina.\r\n"
 --- !u!222 &2012340172
 CanvasRenderer:
