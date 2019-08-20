@@ -21,6 +21,8 @@ public class Item : MonoBehaviour
     //
     ParticleSystem collectablePart;
 
+    public Canvas canvas;
+
     private void Awake()
     {
         //textoPortada.fontSize = 20;
@@ -31,6 +33,9 @@ public class Item : MonoBehaviour
         
         collectablePart = GameObject.Find("CollectableParticles").GetComponent<ParticleSystem>();
         audioPickUp = GetComponentInParent<AudioSource>();
+         canvas = canvas.GetComponent<Canvas>();
+        canvas.enabled = !canvas.enabled;
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -38,8 +43,9 @@ public class Item : MonoBehaviour
         
         if (other.CompareTag("Player"))
         {
-        
+
             //Audio de el collectable
+            canvas.enabled = true;
             audioPickUp.Play();
             textoPortada.fontSize = 14;
             //Cambiar cada exploción de cada particula
