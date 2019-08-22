@@ -10,8 +10,24 @@ public class Kill : MonoBehaviour {
     //public Text playerGameOver;
     public static int PlayerLifes = 3;
     public Transform portal;
+    //Canvas que muestra el conteo.
 
- 
+    //public Text tiempoText;
+    ////Contador
+    //public float tiempo = 0.0f;
+
+
+    private void Update()
+    {
+        //tiempo -= Time.deltaTime;
+        //tiempoText.text = "" + tiempo.ToString("f0");
+
+        //if (tiempo == 0)
+        //{
+        //    PlayerLifes = 0;
+        //    SceneManager.LoadScene("DeadScene");
+        //}
+    }
 
     public void OnTriggerEnter(Collider other)
     {
@@ -41,19 +57,4 @@ public class Kill : MonoBehaviour {
         }
     }
 
-    //public void LoseLife()
-    //{
-    //    if (PlayerLifes > 1)
-    //    {
-    //        PlayerLifes--;
-    //    }
-    //    else
-    //    {
-    //        PlayerLifes = 0;
-    //        //Mostrar Pantalle de Gameover
-    //        Debug.Log("Moriste");
-            
-
-    //    }
-    //}
 }

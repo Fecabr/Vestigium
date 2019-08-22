@@ -19,6 +19,9 @@ public class ItemLevel2 : MonoBehaviour {
     public GameObject gameMeta;
     ParticleSystem collectablePart;
     public float velocity;
+
+    public Canvas canvas;
+
     public void Update()
     {
         transform.Rotate(Vector3.up,Time.deltaTime * velocity,Space.World);
@@ -28,6 +31,9 @@ public class ItemLevel2 : MonoBehaviour {
     {
         collectablePart = GameObject.Find("CollectableParticles").GetComponent<ParticleSystem>();
         audioPickUp = GetComponentInParent<AudioSource>();
+
+        //canvas = canvas.GetComponent<Canvas>();
+        //canvas.enabled = !canvas.enabled;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,7 +41,7 @@ public class ItemLevel2 : MonoBehaviour {
 
         if (other.CompareTag("Player"))
         {
-
+            //canvas.enabled = true;
             //Inicia el audio 
             audioPickUp.Play();
             //Cambia la lectra a 14, ya que esta en 1
