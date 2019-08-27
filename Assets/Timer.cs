@@ -13,10 +13,12 @@ public class Timer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //tiempo -= Time.deltaTime;
         tiempo = tiempo - 1;
         tiempoText.text = "" + tiempo.ToString("f0");
         if (tiempo == 0.0)
         {
+            ItemLevel2.CollectableQuantity2 = 0;
             SceneManager.LoadScene("DeadSceneLevel2");
         }
         

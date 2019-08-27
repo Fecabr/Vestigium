@@ -48,6 +48,7 @@ public class Kill : MonoBehaviour {
                 //Application.LoadLevel(Application.loadedLevel);
                 PlayerLifes = 3;
                 Item.CollectableQuantity = 0;
+                //ItemLevel2.CollectableQuantity2 = 0;
                 //SceneManager.UnloadSceneAsync("MainScene");
                 SceneManager.LoadScene("DeadScene");
                 

@@ -86,6 +86,7 @@
     <Compile Include="Assets\Scripts\ItemLevel2.cs" />
     <Compile Include="Assets\Scripts\itemText.cs" />
     <Compile Include="Assets\Scripts\Kill.cs" />
+    <Compile Include="Assets\Scripts\KillLevel2.cs" />
     <Compile Include="Assets\Scripts\LoadingController.cs" />
     <Compile Include="Assets\Scripts\MenuCtrl.cs" />
     <Compile Include="Assets\Scripts\MovementEnemy.cs" />

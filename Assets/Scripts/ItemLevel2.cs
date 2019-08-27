@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class ItemLevel2 : MonoBehaviour {
 
     //Esta variable llevara el conteo de nuestros puntos de los collectables que recolectemos
-    public static int CollectableQuantity = 0;
+    public static int CollectableQuantity2 = 0;
     public Text CollectableTex;
     //Este texto va a estar oculto
     public Text TextoIndice;
@@ -51,13 +51,13 @@ public class ItemLevel2 : MonoBehaviour {
             collectablePart.Play();
             Destroy(gameObject);
             Destroy(CollectableItem);
-            CollectableQuantity += 10;
-            CollectableTex.text = CollectableQuantity.ToString();
+            CollectableQuantity2 += 10;
+            CollectableTex.text = CollectableQuantity2.ToString();
             //UpdateScoreLable(scorePlayer, CollectableQuantity);
 
-            if (CollectableQuantity == 50)
+            if (CollectableQuantity2 == 50)
             {
-                CollectableQuantity = 0;
+                CollectableQuantity2 = 0;
                 SceneManager.LoadScene("WinSceneLevel2");
             }
 
